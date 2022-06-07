@@ -1,43 +1,68 @@
-const project1 = {
- imageSrc: pro1,
- titre: 'Multi-Post Stories <br> Gain+Glory',
- technolgies: ['React', 'Bootstrap', 'typeScript', 'redux'],
- id: 'firstProject',
- popupDescription: {
-   imageSrc: pro1,
-     titre: 'Add task',
-     technolgies: ['React', 'Bootstrap', 'typeScript', 'redux'],
-     description: " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-     demoLink: 'https://ciraganenicole.github.io/Portfolio/',
-     source: 'https://github.com/ciraganenicole/Portfolio',
- },
-};
+import {React, useState} from 'react';
+import Project from './project';
+import Popop from './popup';
+import styled from "styled-components";
+import projects from "./data"
 
-const project2 = {
- imageSrc: dashbord,
- titre: 'Multi-Post Stories <br> Gain+Glory',
- technolgies: ['css', 'javascript', 'html'],
- id: 'secondProject',
- popupDescription: {
-     imageSrc: dashbord,
-     titre: 'DashBord',
-     technolgies: ['css', 'javascript', 'html'],
-     description: " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-     demoLink: 'https://ciraganenicole.github.io/Portfolio/',
-     source: 'https://github.com/ciraganenicole/Portfolio',
- },
-};
+const Projects = () => {
 
-const project3 = {
- imageSrc: trackar,
- titre: 'Task Trackar',
- technolgies: ['React', 'Bootstrap'],
- id:'thirdProject',
- popupDescription: {
-   imageSrc: trackar,
-     titre: 'Add task',
-     technolgies: ['React', 'Bootstrap'],
-     description: " this Task Tracker is just a little app i made to test my level of knowledge in react, it's my pleasure to find myself able to make a task soon after discovering a framework like react , and that's one of the things that gave me motivation to go deep in react",
-     demoLink: 'https://ciraganenicole.github.io/Portfolio/',
-     source: 'https://github.com/ciraganenicole/Portfolio',
- }}
+const [popup,setPopup] = useState('');
+const [show, setShow] =  useState(false);
+
+const handleClick = (key) => {
+  setPopup(
+    projects.filter((modal)=>modal.id === key ? {...modal}:false)
+  )
+ console.log(popup)
+
+  setShow(true)
+}
+
+const handleShow = () => {
+  setShow(false)
+}
+if(show){
+  document.body.classList.add('overflow-hidden')
+}else{
+  document.body.classList.remove('overflow-hidden')
+}
+  return (
+    <Wrapper>
+    {show &&(
+      <Popop handleshow={handleShow} popup={popup}/>
+  )}
+<div className="mainP md:p-6 h-auto md:w-auto border-black mt-6" id="projects">
+            <Title > My done projects </Title>
+      <div className="flex flex-wrap gap-x-8 gap-y-8 p-10 items-center justify-center">
+      {projects.map((work,key)=>(
+          <Project 
+          key={key}
+          id={work.id}
+          image={work.imageSrc}
+          titre={work.titre}
+          tech={work.technolgies}
+          handleClick={handleClick}
+        />
+      ))}
+    </div>
+    </div>
+    </Wrapper>
+  )
+}
+const Wrapper = styled.div`
+  position: relative;
+  gap: 20px;
+  text-align: center;
+`;
+
+const Title = styled.h1`
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+`;
+
+export default Projects;
+
+

@@ -1,18 +1,17 @@
 import React from "react";
-import Button from "./button";
-import Profiles from "./profiles";
-import Description from "./text";
+import Descript from "./text";
+import Resume from "./resume";
 
 const Home = () => {
+
  return (
   <>
-  <div id="home">
-   <div>
-    <Profiles />
+  <div className="flex flex-col items-center justify-center p-6 xl:p-16 " id="home">
+   <div className="mb-10">
+    <Descript />
    </div>
    <div>
-    <Description />
-    <Button />
+     <Resume />
    </div>
   </div>
   </>

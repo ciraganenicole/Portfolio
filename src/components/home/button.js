@@ -1,18 +1,20 @@
-import React from "react"
+import React from "react";
+import {Button} from "@mui/material"
 
-const Button = () => {
+const Btn = () => {
  return (
   <>
    <a href="https://github.com/ciraganenicole">
-      <button
+      <Button
+         variant="contained"
          type="button"
          value="See my work"
        >
          See my work
-       </button>
+       </Button>
   </a>
   </>
  )
 }
 
-export default Button;
+export default Btn;

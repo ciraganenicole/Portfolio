@@ -10,16 +10,11 @@ const data = [{
     },
     {
         id: 3,
-        name: "EXPERIENCE",
-        url: "#experience"
-    },
-    {
-        id: 4,
         name: "SKILLS",
         url: "#skills"
     },
     {
-        id: 5,
+        id: 4,
         name: "CONTACT",
         url: "#contact"
     },

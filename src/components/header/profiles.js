@@ -6,17 +6,17 @@ const Profiles = () => {
  return (
   <Wrapper>
   <ul className="flex items-end justify-end">
-   <li className="mr-16 text-white">
+   <li className=" mr-4 xl:mr-16 text-white">
     <a href="https://www.linkedin.com/in/ciraganenicole/">
      <FaLinkedinIn />
     </a>
    </li>
-   <li className="mr-16 text-white">
+   <li className=" mr-4 xl:mr-16 text-white">
     <a href="https://twitter.com/CiraganeN">
      <FaTwitter />
     </a>
    </li>
-   <li className="mr-16 text-white">
+   <li className=" mr-4 xl:mr-16 text-white">
     <a href="https://github.com/ciraganenicole">
      <FaGithub />
     </a>

@@ -56,7 +56,7 @@ const Form = () =>{
                        type="submit"
                        value="Send"
                        disabled={state.submitting}
-                       className="inputBox box-content rounded-sm w-1/5"
+                       className="inputBox box-content rounded-sm w-2/5 xl:w-1/5"
                     >
                       Get in touch
                     </Button>

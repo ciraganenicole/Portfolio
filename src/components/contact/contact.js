@@ -18,13 +18,13 @@ const Contact = () => {
 </div>
 <span className="w-full block bg-black border drop-shadow-md  border-indigo-900"></span>
 <p className=" flex justify-center p-4">
-<a href="https://www.linkedin.com/in/ciraganenicole/" className="mr-16">
+<a href="https://www.linkedin.com/in/ciraganenicole/" className="mr-4 xl:mr-16">
      <BsLinkedin/>
   </a>
-  <a href="https://twitter.com/CiraganeN" className="mr-16">
+  <a href="https://twitter.com/CiraganeN" className="mr-4 xl:mr-16">
       <BsTwitter/>
   </a>
-  <a href="https://github.com/ciraganenicole" className="mr-16">
+  <a href="https://github.com/ciraganenicole" className="mr-4 xl:mr-16">
       <GoMarkGithub/>
   </a>
 </p> 

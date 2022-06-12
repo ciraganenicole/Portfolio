@@ -31,7 +31,7 @@ if(show){
     {show &&(
       <Popop handleshow={handleShow} popup={popup}/>
   )}
-<div className="mainP md:p-6 h-auto md:w-auto border-black mt-6" id="projects">
+<div className="mainP md:p-6 h-auto md:w-auto border-black mt-6 " id="projects">
             <Title > My done projects </Title>
       <div className="flex flex-wrap gap-x-8 gap-y-8 p-10 items-center justify-center">
       {projects.map((work,key)=>(

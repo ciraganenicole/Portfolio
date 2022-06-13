@@ -38,9 +38,9 @@ https://github.com/ciraganenicole/Portfolio
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/ciraganenicole)
-- Twitter: [@twitterhandle](https://twitter.com/CiraganeN)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/nicole-ciragane-19a3071bb)
+- GitHub: [ciraganenicole](https://github.com/ciraganenicole)
+- Twitter: [CiraganeN](https://twitter.com/CiraganeN)
+- LinkedIn: [ciraganenicole](https://www.linkedin.com/in/ciraganenicole/)
 
 
 ## 🤝 Contributing

@@ -9,7 +9,7 @@ const Descript = () => {
           <span>I'm Nicole</span>
       </Title>
       <Description>
-        I'm a front-end web developer and open-source enthusiast with a love for clean code and accessible design, in love with pair-programming and remote work. 
+        I'm a fullstack web developer with a love for clean code and accessible design, I like pair-programming and remote work. 
         Fluent in multiple languages, frameworks, and technologies, and capable of ramping up quickly and efficiently and mentoring junior developers.
       </Description>
     </Wrapper>

@@ -21,16 +21,16 @@ const project1 = {
 
 const project2 = {
     imageSrc: image,
-    titre: 'Hackathon',
-    technolgies: ['CSS', 'JavaScript', 'Html'],
+    titre: 'Budget App',
+    technolgies: ['Ruby', 'Ruby on rails', 'PostgreSql', 'TailwindCss'],
     id: 'secondProject',
     popupDescription: {
         imageSrc: image,
-        titre: 'Hackathon',
-        technolgies: ['css', 'javascript', 'html'],
-        description: 'This is the capstone project for the first module in which I built an hackathon online conference website. I built the home and the about pages',
-        demoLink: 'https://ciraganenicole.github.io/Capstone-Project/',
-        source: 'https://github.com/ciraganenicole/Capstone-Project',
+        titre: 'Budget App',
+        technolgies: ['Ruby', 'Ruby on rails', 'PostgreSql', 'TailwindCss'],
+        description: "This is a mobile web application that assists users with money management. It may also show consumers a list of transactions they've done that are tied to their categories, as well as the overall amount of money they've spent.",
+        demoLink: 'https://mighty-springs-28770.herokuapp.com/',
+        source: 'https://github.com/ciraganenicole/Budget-app',
     },
 };
 

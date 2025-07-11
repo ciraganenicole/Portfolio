@@ -1,64 +1,73 @@
-# Portfolio
+# Welcome to your Lovable project
 
-> This project is about myself. It's made to show my skills and what kinds of projects I am able to build.
+## Project info
 
+**URL**: https://lovable.dev/projects/557d48e8-bf23-4cc9-b01f-a29c93503206
 
+## How can I edit this code?
 
+There are several ways of editing your application.
 
+**Use Lovable**
 
+Simply visit the [Lovable Project](https://lovable.dev/projects/557d48e8-bf23-4cc9-b01f-a29c93503206) and start prompting.
 
-![portfolio](https://user-images.githubusercontent.com/72297212/173356900-373bb8e8-8105-4701-8f46-996748148e99.png)
+Changes made via Lovable will be committed automatically to this repo.
 
+**Use your preferred IDE**
 
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
+Follow these steps:
 
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-## Built With
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
- React, TailwindCss, Material UI, Styled Component
+# Step 3: Install the necessary dependencies.
+npm i
 
-## Live Demo
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
 
-[https://ciraganenicole.vercel.app/](https://ciraganenicole.vercel.app/)
+**Edit a file directly in GitHub**
 
-### Prerequisites
-- Git/Github
-- VSCode or another equivalent tool
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-## Getting Started
+**Use GitHub Codespaces**
 
-Clone the project
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-https://github.com/ciraganenicole/Portfolio
+## What technologies are used for this project?
 
+This project is built with:
 
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-## Authors
+## How can I deploy this project?
 
-👤 **Author1**
+Simply open [Lovable](https://lovable.dev/projects/557d48e8-bf23-4cc9-b01f-a29c93503206) and click on Share -> Publish.
 
-- GitHub: [ciraganenicole](https://github.com/ciraganenicole)
-- Twitter: [CiraganeN](https://twitter.com/CiraganeN)
-- LinkedIn: [ciraganenicole](https://www.linkedin.com/in/ciraganenicole/)
+## Can I connect a custom domain to my Lovable project?
 
+Yes, you can!
 
-## 🤝 Contributing
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is not licensed.
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
